@@ -1,0 +1,177 @@
+@import "variables";
+
+* {
+  -webkit-box-sizing : border-box;
+  -moz-box-sizing    : border-box;
+  box-sizing         : border-box;
+}
+
+.container {
+  margin-right  : auto;
+  margin-left   : auto;
+  padding-right : 15px;
+  padding-left  : 15px;
+}
+
+.list-inline {
+  margin-left  : -5px;
+  padding-left : 0;
+  list-style   : none;
+  & > li {
+    display       : inline-block;
+    padding-right : @padding-left-right-li;
+    padding-left  : @padding-left-right-li;
+    & > a {
+      text-decoration : none;
+      color           : @color-list-inline-a;
+    }
+  }
+}
+
+/*---------- /.list-inline end. ----------*/
+.left {
+  float : left !important;
+}
+
+.right {
+  float : right !important;
+}
+
+/*---------- left and right end. ----------*/
+
+/*---------- grid ----------*/
+@media (min-width : 768px) {
+  .container {
+    width : 750px;
+  }
+}
+
+@media (min-width : 992px) {
+  .container {
+    width : 970px;
+  }
+
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    float : left;
+  }
+}
+
+@media (min-width : 1200px) {
+  .container {
+    width : 1150px;
+  }
+
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    float : left;
+  }
+}
+
+.row {
+  margin-right : -15px;
+  margin-left  : -15px;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  position      : relative;
+  min-height    : 1px;
+  padding-right : 15px;
+  padding-left  : 15px;
+}
+
+.col-12 { width : 100%; }
+
+.col-11 { width : 91.66666667%; }
+
+.col-10 { width : 83.33333333%; }
+
+.col-9 { width : 75%; }
+
+.col-8 { width : 66.66666667%; }
+
+.col-7 { width : 58.33333333%; }
+
+.col-6 { width : 50%; }
+
+.col-5 { width : 41.66666667%; }
+
+.col-4 { width : 33.33333333%; }
+
+.col-3 { width : 25%; }
+
+.col-2 { width : 16.66666667%; }
+
+.col-1 { width : 8.33333333%; }
+
+/*---------- grid end. ----------*/
+
+/*---------- clearfix ----------*/
+html[xmlns] .clearfix {
+  display : block;
+}
+
+* html .clearfix {
+  height : 1%;
+}
+
+.clearfix {
+  display : inline-block;
+  &:after {
+    line-height : 0;
+    display     : block;
+    visibility  : hidden;
+    clear       : both;
+    height      : 0;
+    content     : ".";
+  }
+}
+
+/*---------- clearfix end. ----------*/
+.text-hide {
+  color            : transparent;
+  text-shadow      : none;
+  background-color : transparent;
+  border           : 0;
+}
+
+/*----------  end. ----------*/
+.hide {
+  display : none;
+}
+
+/*---------- tabs end. ----------*/
+/* ===========================================================================
+   grid end.
+============================================================================*/

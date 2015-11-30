@@ -1,6 +1,3 @@
-/**
- * Created by Nazar on 12.11.2015.
- */
 "use strict";
 /**
  * If exist class in DOM element return true else return false

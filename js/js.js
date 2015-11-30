@@ -1,6 +1,3 @@
-/**
- * Created by Nazar on 12.11.2015.
- */
 var bs = document.getElementById('button-signup'),
     ls = document.getElementById('loginSignUp'),
     lg = document.getElementById('login'),

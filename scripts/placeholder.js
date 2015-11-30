@@ -1,6 +1,3 @@
-/**
- * Created by Nazar on 23.11.2015.
- */
 (function() {
   var input = document.querySelectorAll('input'); // get all text fields
   var cls = "placeholder"; // set name of the class
